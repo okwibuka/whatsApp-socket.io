@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>chatt</title>
+</head>
+<body>
+
+<div class="container documents__container ">
+        <div class="chatt chatt__log active">
+            <p class="cont">join our chatt place for communicating with different 
+                people around the world</p>
+            <div class="chatt login__container">
+                <p>Join chatt_room</p>
+                <div class="chatt__form">
+                <label for="userrname">username</label>
+                <input type="text" name="" class="chatt login__input" 
+                placeholder="enter your username..">
+                <button class="login__submit">Join</button>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="chatt chatt__room">
+            <div class="top">
+                <ul>
+                    <li>
+                        chatt__room
+                    </li>
+                    <li class="leave__chatt">
+                        <a href="">
+                        exit
+                    </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="messages__container center">
+
+<div class="chatt__content">
+    <!-- <div class="message sender">
+        <p class="owner">you</p>
+        <p class="message_view">hello how is everything going is it all right</p>
+    </div>
+    <div class="message notification">
+        <p> <span class="owner">edwnin</span> enter the chatt room</p> 
+    </div>
+    <div class="message receiver">
+        <p class="owner">peter</p>
+        <p class="message_view">hello how is what is going on there everything going is it all right and okay</p>
+    </div> -->
+</div>
+                
+            </div>
+            
+        <div class="message__submit">
+            <div class="form">
+                <input type="text" name="" class="message__form">
+                <button class="message__submit__button">send</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="code.js"></script>
+</body>
+</html>

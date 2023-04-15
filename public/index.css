@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "roboto" , sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.container
+{
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+}
+.chatt__log .cont{
+    width: 100%;
+    word-wrap: break-word;
+    border: 1px solid blue;
+    padding: 8px;
+    margin-bottom: 15px;
+    background-color: white;
+    font-family: italic;
+    font-weight: bold;
+}
+.container > .chatt{
+    display: none;
+}
+.container > .active{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.login__container .chatt__form{
+    display: flex;
+    flex-direction: column;
+}
+.login__container label,p{
+    font-weight: bold;
+}
+.login__container p{
+border-bottom: 4px solid blue;
+margin-bottom: 1em;
+}
+.login__input{
+    padding: 7px;
+    width: 100%;
+    margin-bottom: 7px;
+    outline: none;
+    outline-color: blue;
+}
+.login__submit
+{
+    color: white;
+    background-color: blue;
+    width: 30%;
+    padding: 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/*--------------------------------------------------*/
+
+.chatt__room
+{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+.chatt__room .top
+{
+    background-color: black;
+    padding: 10px;
+    width: 100%;
+    height: 10%;
+}
+.chatt__room .top ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-top: 15px;
+}
+.leave__chatt{
+    background-color: black;
+    padding: 5px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.leave__chatt a{
+    text-decoration: none;
+    color: white;
+}
+.messages__container{
+    width: 100%;
+    height: 80%;
+    max-height: 80%;
+    overflow: auto;
+    background: url('image/wallpaper.jpg')
+}
+.message__submit
+{
+   height: 10%;  
+}
+.message__submit .form{
+    display: flex;
+    width: 100%;
+}
+.message__submit .message__form{
+    flex: 1;
+    width: 80%;
+    outline: none;
+    padding: 15px;
+}
+.message__submit__button
+{
+    background-color: green;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    width: 20%;
+    border:  1px solid black;
+}
+
+.sender{
+
+    margin-left: auto;
+    width: fit-content;
+}
+.sender .message_view
+{
+    background-color: white;
+    color: black;
+}
+.receiver{
+    margin-right: auto;
+    width: fit-content;
+}
+.notification 
+{
+
+width: fit-content;
+   margin: 8px auto;
+}
+.message{
+    display: flex;
+}
+.message_view
+{
+    background-color: blue;
+    width: fit-content;
+    word-wrap: break-word;
+    padding: 7px;
+    border-radius: 7px;
+    color: white;
+    max-width: 10em;
+    margin-left: 4px;
+}
+.owner{
+    font-weight: bold;
+}
+
+.chatt__content{
+    padding: 10px;
+    margin: 7px 0px;
+}
+
+
+@media only screen and (max-width: 650px){
+    .chatt__room{
+        width: 100%;
+    }
+}
